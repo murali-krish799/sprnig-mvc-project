@@ -34,7 +34,7 @@ public class MyLmsConfiguration {
 //sessionfactory of session
 	@Bean
 	public LocalSessionFactoryBean localSessionFactoryBean() {
-    
+    //now commit in dev branch only..
 		LocalSessionFactoryBean localSessionFactoryBean = new LocalSessionFactoryBean();
 
 		localSessionFactoryBean.setPackagesToScan("com.krishsolution.entity");
