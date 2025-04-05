@@ -22,6 +22,7 @@ import org.springframework.web.servlet.view.InternalResourceViewResolver;
 @EnableTransactionManagement
 public class MyLmsConfiguration {
 //configuration done here
+//	https://github.com/murali-krish799/sprnig-mvc-project.git
 	@Bean
 	public ViewResolver viewResolver() {
 
