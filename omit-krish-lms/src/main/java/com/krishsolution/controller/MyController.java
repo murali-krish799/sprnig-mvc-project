@@ -15,7 +15,7 @@ import com.krishsolution.service.LmsService;
 
 @Controller
 public class MyController {
-
+//new changes has been done here
 	@Autowired
 	private LmsService lmsService;
         
