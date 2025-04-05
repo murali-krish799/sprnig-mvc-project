@@ -32,7 +32,7 @@ public class MyLmsConfiguration {
 
 		return internalResourceView;
 	}
-
+//sessionfactory of session
 	@Bean
 	public LocalSessionFactoryBean localSessionFactoryBean() {
 
