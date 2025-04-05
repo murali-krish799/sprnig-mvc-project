@@ -40,3 +40,130 @@ Binding(CTRL+SHIFT+T,
 		,,true),null),
 	org.eclipse.ui.defaultAcceleratorConfiguration,
 	org.eclipse.ui.contexts.window,,,system)
+
+!ENTRY org.eclipse.egit.ui 2 0 2025-04-05 07:29:00.000
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\penna'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.jboss.tools.usage 2 0 2025-04-05 07:29:29.869
+!MESSAGE Ignored property with key: null value: null
+
+!ENTRY org.jboss.tools.usage 2 0 2025-04-05 07:29:30.273
+!MESSAGE Could not create Segment Analytics instance, missing writeKey.
+
+!ENTRY org.jboss.tools.usage 2 0 2025-04-05 07:29:30.277
+!MESSAGE Could not send USER event 'Anonymous ID: 3a2ff973-c2af-4b6e-bf66-741a49922343': no analytics instance present.
+
+!ENTRY org.jboss.tools.usage 2 0 2025-04-05 07:29:30.281
+!MESSAGE Could not create Segment Analytics instance, missing writeKey.
+
+!ENTRY org.jboss.tools.usage 2 0 2025-04-05 07:29:30.285
+!MESSAGE Could not send STARTUP event 'startup': no analytics instance present.
+
+!ENTRY org.jboss.tools.usage 2 0 2025-04-05 07:29:30.287
+!MESSAGE Could not create Segment Analytics instance, missing writeKey.
+
+!ENTRY org.jboss.tools.usage 2 0 2025-04-05 07:29:30.291
+!MESSAGE Could not send USER event 'Anonymous ID: 3a2ff973-c2af-4b6e-bf66-741a49922343': no analytics instance present.
+
+!ENTRY org.jboss.tools.usage 2 0 2025-04-05 07:29:30.293
+!MESSAGE Could not create Segment Analytics instance, missing writeKey.
+
+!ENTRY org.jboss.tools.usage 2 0 2025-04-05 07:29:30.295
+!MESSAGE Could not send ACTION event 'showOnStartup': no analytics instance present.
+
+!ENTRY org.jboss.tools.usage 2 0 2025-04-05 07:29:30.300
+!MESSAGE Ignored property with key: null value: null
+
+!ENTRY org.jboss.tools.usage 2 0 2025-04-05 07:29:30.306
+!MESSAGE Could not create Segment Analytics instance, missing writeKey.
+
+!ENTRY org.jboss.tools.usage 2 0 2025-04-05 07:29:30.308
+!MESSAGE Could not send USER event 'Anonymous ID: 3a2ff973-c2af-4b6e-bf66-741a49922343': no analytics instance present.
+
+!ENTRY org.jboss.tools.usage 2 0 2025-04-05 07:29:30.310
+!MESSAGE Could not create Segment Analytics instance, missing writeKey.
+
+!ENTRY org.jboss.tools.usage 2 0 2025-04-05 07:29:30.312
+!MESSAGE Could not send STARTUP event 'startup': no analytics instance present.
+
+!ENTRY org.jboss.tools.usage 2 0 2025-04-05 07:29:30.316
+!MESSAGE Could not create Segment Analytics instance, missing writeKey.
+
+!ENTRY org.jboss.tools.usage 2 0 2025-04-05 07:29:30.319
+!MESSAGE Could not send USER event 'Anonymous ID: 3a2ff973-c2af-4b6e-bf66-741a49922343': no analytics instance present.
+
+!ENTRY org.jboss.tools.usage 2 0 2025-04-05 07:29:30.322
+!MESSAGE Could not create Segment Analytics instance, missing writeKey.
+
+!ENTRY org.jboss.tools.usage 2 0 2025-04-05 07:29:30.324
+!MESSAGE Could not send ACTION event 'installed': no analytics instance present.
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2025-04-05 07:30:03.873
+!MESSAGE Classpath changed for project: omit-krish-lms
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2025-04-05 07:30:55.104
+!MESSAGE Classpath changed for project: omit-krish-lms
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2025-04-05 07:30:55.165
+!MESSAGE Boot project ADDED: omit-krish-lms
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2025-04-05 07:30:55.171
+!MESSAGE Starting Boot LS...
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2025-04-05 07:30:55.417
+!MESSAGE Started Boot LS process
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2025-04-05 07:30:55.651
+!MESSAGE Command list starting LS: org.springframework.tooling.boot.ls
+START:
+D:\workspace& Sotfwares\sts-4.21.0.RELEASE\plugins\org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_17.0.9.v20231028-0858\jre\bin\javaw.exe
+-cp
+D:\workspace& Sotfwares\sts-4.21.0.RELEASE\plugins\org.springframework.tooling.boot.ls_1.51.0.202312011752\servers\spring-boot-language-server\BOOT-INF\classes;D:\workspace& Sotfwares\sts-4.21.0.RELEASE\plugins\org.springframework.tooling.boot.ls_1.51.0.202312011752\servers\spring-boot-language-server\BOOT-INF\lib\*
+-Dsts.lsp.client=eclipse
+-Dlsp.completions.indentation.enable=true
+-Xmx1024m
+-XX:+HeapDumpOnOutOfMemoryError
+-XX:TieredStopAtLevel=1
+-Xlog:jni+resolve=off
+-Dspring.config.location=file:D:\workspace& Sotfwares\sts-4.21.0.RELEASE\plugins\org.springframework.tooling.boot.ls_1.51.0.202312011752\servers\spring-boot-language-server\BOOT-INF\classes\application.properties
+-XX:ErrorFile=D:/ALL-JAVA-CONCEPTS-RECAP-2025/Spring-ORM-2025/sprnig-mvc-project/.metadata/.plugins/org.springframework.tooling.boot.ls/fatal-error-spring-boot_1743818455647
+org.springframework.ide.vscode.boot.app.BootLanguageServerBootApp
+--languageserver.hover-timeout=225
+END
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2025-04-05 07:30:55.656
+!MESSAGE DelegatingStreamConnectionProvider - Starting Boot LS
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2025-04-05 07:30:55.707
+!MESSAGE Started org.springframework.tooling.boot.ls LS process 22124
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2025-04-05 07:30:56.610
+!MESSAGE Classpath changed for project: omit-krish-lms
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2025-04-05 07:31:03.521
+!MESSAGE Classpath changed for project: omit-krish-lms
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2025-04-05 07:31:26.079
+!MESSAGE Classpath changed for project: omit-krish-lms
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2025-04-05 07:33:24.416
+!MESSAGE Classpath changed for project: omit-krish-lms
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2025-04-05 07:33:24.990
+!MESSAGE Classpath changed for project: omit-krish-lms
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2025-04-05 07:34:20.709
+!MESSAGE Classpath changed for project: omit-krish-lms
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2025-04-05 07:34:20.713
+!MESSAGE Boot project REMOVED: omit-krish-lms
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2025-04-05 07:34:24.547
+!MESSAGE Classpath changed for project: omit-krish-lms
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2025-04-05 07:34:24.550
+!MESSAGE Boot project ADDED: omit-krish-lms

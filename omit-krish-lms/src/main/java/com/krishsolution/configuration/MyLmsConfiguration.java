@@ -21,7 +21,7 @@ import org.springframework.web.servlet.view.InternalResourceViewResolver;
 @ComponentScan(basePackages = { "com/*" })
 @EnableTransactionManagement
 public class MyLmsConfiguration {
-
+//configuration done here
 	@Bean
 	public ViewResolver viewResolver() {
 
