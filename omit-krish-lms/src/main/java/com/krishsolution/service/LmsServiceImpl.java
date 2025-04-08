@@ -64,4 +64,12 @@ public class LmsServiceImpl implements LmsService {
 		return lmsDAO.findLessonsById(lessonId);
 	}
 
+	@Override
+	@Transactional
+	public int saveCourse(Course course) {
+
+		return lmsDAO.saveCourse(course);
+		
+	}
+
 }

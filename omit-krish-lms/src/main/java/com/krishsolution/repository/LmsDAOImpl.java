@@ -113,4 +113,13 @@ public class LmsDAOImpl implements LmsDAO {
 		return lesson.get(0);
 	}
 
+	@Override
+	public int saveCourse(Course course) {
+
+		Session session = sessionFactory.getCurrentSession();
+		int id = (int) session.save(course);
+
+		return id;
+	}
+
 }
