@@ -60,7 +60,7 @@ public class LmsDAOImpl implements LmsDAO {
 
 		for (Instructor instructor : instructorsList) {
 
-			Hibernate.initialize(instructor);
+			Hibernate.initialize(instructor.getCourses());
 		}
 
 		return instructorsList;
@@ -71,15 +71,9 @@ public class LmsDAOImpl implements LmsDAO {
 
 		Session session = sessionFactory.getCurrentSession();
 
-		int result = session.createNamedMutationQuery("deleteInstructorById").setParameter("ID", id).executeUpdate();
+		Instructor instructor = session.get(Instructor.class, id);
 
-		if (result > 0) {
-
-			System.out.println("deleted has been done");
-		} else {
-
-			System.out.println("delete process not occured... some thing wrong");
-		}
+		session.remove(instructor);
 	}
 
 	@Override
@@ -120,6 +114,22 @@ public class LmsDAOImpl implements LmsDAO {
 		int id = (int) session.save(course);
 
 		return id;
+	}
+
+	@Override
+	public void saveLesson(Lesson lesson) {
+
+		Session session = sessionFactory.getCurrentSession();
+		session.merge(lesson);
+	}
+
+	@Override
+	public void deleteLesson(Lesson lesson) {
+		
+		Session session = sessionFactory.getCurrentSession();
+		
+		session.remove(lesson);
+		
 	}
 
 }

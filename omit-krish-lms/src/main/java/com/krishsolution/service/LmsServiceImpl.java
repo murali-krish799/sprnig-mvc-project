@@ -72,4 +72,18 @@ public class LmsServiceImpl implements LmsService {
 		
 	}
 
+	@Override
+	@Transactional
+	public void saveLesson(Lesson lesson) {
+		
+		lmsDAO.saveLesson(lesson);
+	}
+
+	@Override
+	@Transactional
+	public void deleteLesson(Lesson lesson) {
+
+		lmsDAO.deleteLesson(lesson);
+	}
+
 }

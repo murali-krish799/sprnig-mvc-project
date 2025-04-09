@@ -73,5 +73,11 @@ public class Lesson {
 		this.course = course;
 	}
 
+	@Override
+	public String toString() {
+		return "Lesson [id=" + id + ", name=" + name + ", link=" + link + ", description=" + description + ", course="
+				+ course + "]";
+	}
+
 
 }

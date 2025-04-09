@@ -12,3 +12,6 @@ Jakarta servler api
 2.hibernate this is include of spring orm like transitive dependency
 3.mysql
 4.spring orm (interact with hibernate using sessionFactory)
+
+
+today requirement is add feature of pagination through pagelistholder

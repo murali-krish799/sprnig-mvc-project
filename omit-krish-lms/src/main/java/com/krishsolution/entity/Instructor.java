@@ -1,12 +1,10 @@
 package com.krishsolution.entity;
 
-
-
 import java.util.List;
 
+import jakarta.persistence.CascadeType;
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
-import jakarta.persistence.FetchType;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
@@ -16,32 +14,31 @@ import jakarta.persistence.OneToMany;
 import jakarta.persistence.Table;
 
 @Entity
-@Table(name="instructors")
+@Table(name = "instructors")
 @NamedQueries({
-	
-@NamedQuery(name="findInstructorByName",query = "from Instructor where name like :instructorName"),	
-	
-@NamedQuery(name="deleteInstructorById" ,query="delete from Instructor where id=:ID")
-}
-)
+
+		@NamedQuery(name = "findInstructorByName", query = "from Instructor where name like :instructorName")
+
+})
 public class Instructor {
 
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
-	@Column(name="instructor_id")
+	@Column(name = "instructor_id")
 	private int id;
-	
-	@Column(name="instructor_name")
+
+	@Column(name = "instructor_name")
 	private String name;
-	
-	@Column(name="instructor_teaching_exp")
-	private Double experience=1.0;
-	
-	@Column(name="instructor_gMail")
+
+	@Column(name = "instructor_teaching_exp")
+	private Double experience = 1.0;
+
+	@Column(name = "instructor_gMail")
 	private String gMail;
-	
-	@OneToMany(mappedBy="instructor",fetch = FetchType.LAZY)
-	private List<Course>courses;
+
+	@OneToMany(mappedBy = "instructor", cascade = { CascadeType.PERSIST, CascadeType.MERGE, CascadeType.REFRESH,
+			CascadeType.REMOVE })
+	private List<Course> courses;
 
 	public List<Course> getCourses() {
 		return courses;
@@ -62,8 +59,6 @@ public class Instructor {
 	public String getName() {
 		return name;
 	}
-
-	
 
 	public Double getExperience() {
 		return experience;
@@ -93,6 +88,5 @@ public class Instructor {
 	public String toString() {
 		return "Instructor [id=" + id + ", name=" + name + ", experience=" + experience + ", gMail=" + gMail + "]";
 	}
-	
-	
+
 }

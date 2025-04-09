@@ -2,6 +2,7 @@ package com.krishsolution.entity;
 
 import java.util.List;
 
+import jakarta.persistence.CascadeType;
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.FetchType;
@@ -39,7 +40,7 @@ public class Course {
 	@JoinColumn(name = "instructor_id", referencedColumnName = "instructor_id")
 	private Instructor instructor;
 
-	@OneToMany(mappedBy = "course",fetch = FetchType.LAZY)
+	@OneToMany(mappedBy = "course",fetch = FetchType.LAZY,cascade = CascadeType.ALL)
 	private List<Lesson> lessons;
 
 	public List<Lesson> getLessons() {

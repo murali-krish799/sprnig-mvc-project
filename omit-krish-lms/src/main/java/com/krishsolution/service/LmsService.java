@@ -15,5 +15,7 @@ public interface LmsService {
 	public List<Course> findLessonsBycourseId(int courseId);
 	public Lesson findLessonsById(int lessonId);
 	public int saveCourse(Course course);
+	public void saveLesson(Lesson lesson);
+	public void deleteLesson(Lesson lesson);
 
 }
