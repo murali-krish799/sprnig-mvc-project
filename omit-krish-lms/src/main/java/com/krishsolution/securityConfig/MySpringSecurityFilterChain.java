@@ -30,7 +30,7 @@ public class MySpringSecurityFilterChain {
 						.anyRequest().authenticated())
 				.formLogin(form -> form.loginPage("/myLoginPage").loginProcessingUrl("/process-login")
 						.defaultSuccessUrl("/instructors", true).permitAll())
-				.logout(logout -> logout.logoutUrl("/logout")
+				.logout(logout -> logout
 						.logoutRequestMatcher(new AntPathRequestMatcher("/logout", "GET")) // 🔥 Allow GET for logout
 				)
 
