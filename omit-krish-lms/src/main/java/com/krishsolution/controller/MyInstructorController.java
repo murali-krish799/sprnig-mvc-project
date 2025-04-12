@@ -9,6 +9,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.ResponseBody;
 
 import com.krishsolution.entity.Instructor;
 import com.krishsolution.service.LmsService;
@@ -65,5 +66,19 @@ public class MyInstructorController {
 		lmsService.deleteInstructorById(id);
 
 		return "redirect:/instructors";
+	}
+
+	@ResponseBody
+	@GetMapping("test")
+	public String welcome() {
+
+		return "this is new test method for permitALL()";
+	}
+
+	@ResponseBody
+	@GetMapping("test-demo")
+	public String welcome2() {
+
+		return "this is new test method for permitALL()-demooo";
 	}
 }

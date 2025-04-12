@@ -21,16 +21,28 @@
 .navbar:hover {
 	transform: scale(1.02); /* Slight zoom-in effect */
 }
- .navbar {
-        background-color: #4CAF50 !important; /* Green background */
-    }
-    .nav-link {
-        color: white !important; /* White text */
-        font-weight: bold;
-    }
-    .nav-link:hover {
-        color: yellow !important; /* Highlight effect */
-    }
+
+.navbar {
+	background-color: #4CAF50 !important; /* Green background */
+}
+
+.nav-link {
+	color: white !important; /* White text */
+	font-weight: bold;
+}
+
+.nav-link:hover {
+	color: yellow !important; /* Highlight effect */
+}
+.logout {
+    color: red; 
+    padding-left: 200px; 
+    display: block; 
+    position: relative; 
+    top: 50%; 
+    transform: translateY(-50%); 
+}
+
 </style>
 
 </head>
@@ -52,13 +64,22 @@
 						href="/omit-krish-lms/show-instructor-page">add-instructor</a></li>
 					<li class="nav-item"><a class="nav-link"
 						href="/omit-krish-lms/showAddCoursePage">add-course</a></li>
-				
+
 					<li class="nav-item"><a class="nav-link disabled"
 						aria-disabled="true">Disabled</a></li>
+					<li class="nav-item"><a  class="logout" href="logout" >
+							logout</a></li>
+
 				</ul>
+
+
+
+
+
 
 			</div>
 		</div>
+
 	</nav>
 
 </body>

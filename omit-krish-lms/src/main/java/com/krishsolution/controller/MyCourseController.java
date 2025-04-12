@@ -22,7 +22,6 @@ import jakarta.servlet.http.HttpServletRequest;
 @Controller
 @SessionAttributes({ "lesNextPreviousDTO" })
 public class MyCourseController {
-
 	@Autowired
 	private LmsService lmsService;
 //	viewLessons?courseId=4

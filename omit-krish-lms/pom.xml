@@ -11,14 +11,15 @@
 	<properties>
 		<maven.compiler.source>17</maven.compiler.source>
 		<maven.compiler.target>17</maven.compiler.target>
-		<spring.version>6.0.0</spring.version>
+		<spring.version>6.2.4</spring.version>
+		<spring.security>6.4.4</spring.security>
 	</properties>
 	<dependencies>
 
 		<dependency>
 			<groupId>jakarta.servlet</groupId>
 			<artifactId>jakarta.servlet-api</artifactId>
-			<version>${spring.version}</version>
+			<version>6.1.0</version>
 			<scope>provided</scope>
 		</dependency>
 
@@ -26,6 +27,17 @@
 			<groupId>org.springframework</groupId>
 			<artifactId>spring-webmvc</artifactId>
 			<version>${spring.version}</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.springframework.security</groupId>
+			<artifactId>spring-security-web</artifactId>
+			<version>${spring.security}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework.security</groupId>
+			<artifactId>spring-security-config</artifactId>
+			<version>${spring.security}</version>
 		</dependency>
 		<dependency>
 			<groupId>org.hibernate.orm</groupId>
