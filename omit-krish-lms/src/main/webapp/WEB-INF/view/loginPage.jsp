@@ -49,7 +49,8 @@ h1, label {
 	<div class="container mt-5" align="center">
 		<div class="login-container">
 			<c:if test="${param.error != null}">
-				<div class="alert alert-danger" style="color:red;">Invalid username or password!</div>
+				<div class="alert alert-danger" style="color: red;">Invalid
+					username or password!</div>
 			</c:if>
 		</div>
 		<h1>Login Page</h1>
@@ -60,7 +61,10 @@ h1, label {
 				name="password" /> <br /> <br /> <input type="hidden"
 				name="${_csrf.parameterName}" value="${_csrf.token}" /> <input
 				type="submit" value="Login" style="background-color: green;" />
-
+				<br/>
+				<br/>
+				 <a
+				href="registration"><i style="color:red;">Are you new user? register here...</i></a>
 		</form>
 
 

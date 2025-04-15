@@ -64,6 +64,7 @@
                                 <label for="email" class="form-label">Instructor Email:</label>
                                 <form:input path="gMail" class="form-control" id="email" placeholder="Enter Email" />
                             </div>
+                            
                             <!-- Submit Button -->
                             <div class="d-grid">
                                 <button type="submit" class="btn btn-primary">Submit</button>

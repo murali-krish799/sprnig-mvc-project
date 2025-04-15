@@ -1,5 +1,6 @@
 package com.krishsolution.controller;
 
+import java.security.Principal;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -21,13 +22,15 @@ public class MyInstructorController {
 	private LmsService lmsService;
 
 	@GetMapping("/instructors")
-	public String myInstructors(Model model) {
+	public String myInstructors(Model model,Principal principal) {
 
 		List<Instructor> fetchInstructors = lmsService.fetchInstructors();
 
+		String username = principal.getName();
 //		List<Course> courses = lmsService.findCourses();
 		model.addAttribute("listOfInstructors", fetchInstructors);
 		model.addAttribute("instructorDTO", new Instructor());
+		model.addAttribute("username", username);
 //		model.addAttribute("courses", courses);
 
 		return "instructor";

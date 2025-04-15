@@ -17,6 +17,7 @@
 <style>
 body {
 	background-color: #f8f9fa;
+	display: inline-block;
 	/* Light gray background for better readability */
 }
 
@@ -54,6 +55,9 @@ tbody tr:hover {
 		<!-- Centering the content -->
 		<div align="center" class="mb-4">
 			<h1>Instructors</h1>
+			<div align="left">
+			<h1>Hi </h1> <span style="color: blue;">${username}</span>
+			</div>
 			<a href="show-instructor-page" class="btn btn-success">Add
 				Instructors</a>
 		</div>

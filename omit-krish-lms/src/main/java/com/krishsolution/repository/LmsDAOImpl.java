@@ -6,18 +6,28 @@ import org.hibernate.Hibernate;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.hibernate.query.Query;
+import org.modelmapper.ModelMapper;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Repository;
 
+import com.krishsolution.DTO.RegistrationDTO;
 import com.krishsolution.entity.Course;
 import com.krishsolution.entity.Instructor;
 import com.krishsolution.entity.Lesson;
+import com.krishsolution.entity.Registration;
 
 @Repository
 public class LmsDAOImpl implements LmsDAO {
 
 	@Autowired
 	private SessionFactory sessionFactory;
+	
+	@Autowired
+	private PasswordEncoder passwordEncoder;
+	
+	@Autowired
+	private ModelMapper modelMapper;
 
 	@Override
 	public List<Instructor> fetchInstructors() {
@@ -130,6 +140,18 @@ public class LmsDAOImpl implements LmsDAO {
 		
 		session.remove(lesson);
 		
+	}
+
+	@Override
+	public void saveRegistration(RegistrationDTO registrationDTO) {
+
+		registrationDTO.setActive(true);
+		registrationDTO.setRoles("user");
+		Registration registration = modelMapper.map(registrationDTO, Registration.class);
+		
+		Session session = sessionFactory.getCurrentSession();
+		
+		session.persist(registration);
 	}
 
 }

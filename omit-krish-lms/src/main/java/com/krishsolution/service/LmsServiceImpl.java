@@ -6,6 +6,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
+import com.krishsolution.DTO.RegistrationDTO;
 import com.krishsolution.entity.Course;
 import com.krishsolution.entity.Instructor;
 import com.krishsolution.entity.Lesson;
@@ -84,6 +85,13 @@ public class LmsServiceImpl implements LmsService {
 	public void deleteLesson(Lesson lesson) {
 
 		lmsDAO.deleteLesson(lesson);
+	}
+
+	@Override
+	@Transactional
+	public void saveRegistration(RegistrationDTO registrationDTO) {
+		
+		lmsDAO.saveRegistration(registrationDTO);
 	}
 
 }

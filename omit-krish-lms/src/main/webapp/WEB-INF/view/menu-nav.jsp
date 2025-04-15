@@ -34,15 +34,15 @@
 .nav-link:hover {
 	color: yellow !important; /* Highlight effect */
 }
-.logout {
-    color: red; 
-    padding-left: 200px; 
-    display: block; 
-    position: relative; 
-    top: 50%; 
-    transform: translateY(-50%); 
-}
 
+.logout  {
+	color: red;
+	padding-left: 200px;
+	display: block;
+	position: relative;
+	top: 50%;
+	transform: translateY(-50%);
+}
 </style>
 
 </head>
@@ -67,7 +67,7 @@
 
 					<li class="nav-item"><a class="nav-link disabled"
 						aria-disabled="true">Disabled</a></li>
-					<li class="nav-item"><a  class="logout" href="logout" >
+					<li class="nav-item"><a class="logout" href="logout">
 							logout</a></li>
 
 				</ul>

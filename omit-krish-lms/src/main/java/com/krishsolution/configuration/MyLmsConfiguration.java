@@ -5,6 +5,7 @@ import java.util.Properties;
 import javax.sql.DataSource;
 
 import org.hibernate.SessionFactory;
+import org.modelmapper.ModelMapper;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
@@ -74,5 +75,12 @@ public class MyLmsConfiguration {
 	public HibernateTransactionManager getHibernateTransactionManager(SessionFactory sessionFactory) {
 
 		return new HibernateTransactionManager(sessionFactory);
+	}
+	
+	
+	@Bean
+	public ModelMapper modelMapper() {
+		
+		return new ModelMapper();
 	}
 }

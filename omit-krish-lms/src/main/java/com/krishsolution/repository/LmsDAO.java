@@ -2,6 +2,7 @@ package com.krishsolution.repository;
 
 import java.util.List;
 
+import com.krishsolution.DTO.RegistrationDTO;
 import com.krishsolution.entity.Course;
 import com.krishsolution.entity.Instructor;
 import com.krishsolution.entity.Lesson;
@@ -17,6 +18,7 @@ public interface LmsDAO {
 	public int saveCourse(Course course);
 	public void saveLesson(Lesson lesson);
 	public void deleteLesson(Lesson lesson);
+	public void saveRegistration(RegistrationDTO registrationDTO);
 
 
 }

@@ -12,9 +12,9 @@ public class MySecurityController {
 
 		return "loginPage";
 	}
-	@GetMapping("/logout")
+	@GetMapping("/mylogout")
 	public String logoutPage() {
-		System.out.println("Login page hit!");
+		System.out.println("logot constructor!");
 
 		return "logoutpage";
 	}
